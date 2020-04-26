@@ -1,5 +1,5 @@
 FROM hashicorp/terraform:light
 
-RUN apk add git bash jq \
+RUN apk add git bash jq openssl \
     && apk -Uuv add groff less python py-pip \
     && pip install awscli
